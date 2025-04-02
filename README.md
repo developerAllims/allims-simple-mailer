@@ -1,0 +1,1 @@
+# allims-simple-mailer
