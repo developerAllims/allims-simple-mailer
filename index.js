@@ -2,10 +2,17 @@ require('dotenv').config()
 
 const express = require('express')
 const bodyParser = require('body-parser')
+const cors = require('cors')
 const app = express()
 
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: false }))
+
+const corsOptions = {
+  origin: 'https://allims-site.onrender.com/',
+  optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
+}
+app.use(cors(corsOptions))
 
 app.get('/', (req, res) => {
   res.send({ success: true, message: 'OK' })
