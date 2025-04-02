@@ -1,0 +1,21 @@
+{
+  "name": "allims-simple-mailer",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/developerAllims/allims-simple-mailer.git",
+  "author": "Ricardo Miranda <54359457+ricardomiranda-allims@users.noreply.github.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "body-parser": "^2.2.0",
+    "dotenv": "^16.4.7",
+    "express": "^5.1.0",
+    "nodemailer": "^6.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
