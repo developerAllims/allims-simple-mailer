@@ -15,7 +15,8 @@
     "prebuild": "npm version patch",
     "build": "pkg .",
     "postbuild": "git push origin main",
-    "compile": "pkg ."
+    "compile": "pkg .",
+    "patch": "npm version patch"
   },
   "dependencies": {
     "body-parser": "^2.2.0",
