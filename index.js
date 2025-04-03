@@ -8,8 +8,10 @@ const app = express()
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: false }))
 
+const { CORS_ORIGIN = '*' } = process.env
+
 const corsOptions = {
-  origin: '*',
+  origin: CORS_ORIGIN,
   methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
   preflightContinue: false,
   optionsSuccessStatus: 204
