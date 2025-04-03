@@ -19,7 +19,8 @@ const corsOptions = {
 app.use(cors(corsOptions))
 
 app.get('/', (req, res) => {
-  res.send({ success: true, message: 'OK' })
+  const { version } = require('./package.json')
+  res.send({ success: true, message: 'OK', version })
 })
 
 const nodemailer = require('nodemailer')
