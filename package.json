@@ -5,6 +5,10 @@
   "repository": "https://github.com/developerAllims/allims-simple-mailer.git",
   "author": "Ricardo Miranda <54359457+ricardomiranda-allims@users.noreply.github.com>",
   "license": "MIT",
+  "bin": "index.js",
+  "pkg": {
+    "outputPath": "dist"
+  },
   "scripts": {
     "dev": "nodemon index.js",
     "start": "node index.js",
