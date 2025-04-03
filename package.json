@@ -16,7 +16,8 @@
     "build": "pkg .",
     "postbuild": "git push origin main",
     "compile": "pkg .",
-    "patch": "npm version patch"
+    "patch": "npm version patch",
+    "postpatch": "git push origin main"
   },
   "dependencies": {
     "body-parser": "^2.2.0",
