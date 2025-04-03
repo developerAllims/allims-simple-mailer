@@ -1,6 +1,6 @@
 {
   "name": "allims-simple-mailer",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "index.js",
   "repository": "https://github.com/developerAllims/allims-simple-mailer.git",
   "author": "Ricardo Miranda <54359457+ricardomiranda-allims@users.noreply.github.com>",
