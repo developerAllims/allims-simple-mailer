@@ -10,8 +10,10 @@ app.use(bodyParser.urlencoded({ extended: false }))
 
 const { CORS_ORIGIN = '*' } = process.env
 
+console.log(CORS_ORIGIN)
+
 const corsOptions = {
-  origin: CORS_ORIGIN,
+  origin: CORS_ORIGIN.split(' '),
   methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
   preflightContinue: false,
   optionsSuccessStatus: 204
